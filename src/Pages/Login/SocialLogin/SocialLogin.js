@@ -3,7 +3,7 @@ import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/a
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import google from '../../../images/social/google.png'
-import  github from '../../../images/social/github.png'
+import github from '../../../images/social/github.png'
 
 const SocialLogin = () => {
 
@@ -14,11 +14,11 @@ const SocialLogin = () => {
     let errorElement;
 
     if (error || githubError) {
-     
-        errorElement=  <div>
-                <p className='text-danger'>Error: {error?.message} {githubError?.message}</p>
-            </div>
-        
+
+        errorElement = <div>
+            <p className='text-danger'>Error: {error?.message} {githubError?.message}</p>
+        </div>
+
     }
 
     if (user || GithubUser) {
@@ -34,14 +34,14 @@ const SocialLogin = () => {
             </div>
             {errorElement}
             <div>
-                <button onClick={()=>signInWithGoogle()} className='btn btn-primary w-50 d-block mx-auto my-2  '>
+                <button onClick={() => signInWithGoogle()} className='btn btn-primary w-50 d-block mx-auto my-2  '>
                     <img width="30px" src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
-             
-                <button onClick={()=>signInWithGithub()} className='btn btn-primary w-50 d-block mx-auto my-2  '>
+
+                <button onClick={() => signInWithGithub()} className='btn btn-primary w-50 d-block mx-auto my-3 mb-5  '>
                     <img width="30px" src={github} alt="" />
-                    <span className='px-2'> Github Sign In</span></button>
+                    <span className='px-2 '> Github Sign In</span></button>
             </div>
         </div>
     );
