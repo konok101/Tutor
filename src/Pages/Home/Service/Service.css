@@ -1,0 +1,22 @@
+.payment-btn button{
+    border-radius: 10px;
+    background-color: rgb(21, 21, 158);
+    text-align: center;
+     color: white;
+     padding: 4px;
+   
+}
+.timeZone{
+    display: flex;
+     justify-content: space-between;
+
+}
+
+span {
+    padding: 10px;
+}
+
+.payment-btn:hover  button{
+    background-color: orange !important;
+    border-radius: 10px;
+}

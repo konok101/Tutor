@@ -1,0 +1,9 @@
+.info {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 70% 30%;
+}
+.my-goals{
+    margin-top: 100px;
+}

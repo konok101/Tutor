@@ -7,6 +7,8 @@ import PaymentCheckout from './Pages/PaymentCheckout/PaymentCheckout';
 import Login from './Pages/Login/RequireAuth/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import Footer from './Pages/Shared/Footer/Footer';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -20,9 +22,11 @@ function App() {
           <PaymentCheckout></PaymentCheckout>
         </RequireAuth>
          }></Route>
+         <Route path='/about' element={<About></About>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
