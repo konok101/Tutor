@@ -7,3 +7,14 @@
 .my-goals{
     margin-top: 100px;
 }
+
+@media only screen and (max-width:576px){
+    .info{
+        
+        grid-template-columns: 100%;
+    }
+    .my-goals{
+        margin-top: 0px;
+    }
+    
+}
