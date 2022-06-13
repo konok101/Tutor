@@ -8,7 +8,8 @@ const Service = ({ service }) => {
 
     const navigate = useNavigate();
     const navigateToPayment = Sub => {
-        navigate(`/home/${Sub}`)
+        navigate(`/home/${id}`)
+       
     }
     return (
         <div className=' g-5 col-sm-12 col-md-6 col-lg-4 '>
@@ -23,7 +24,7 @@ const Service = ({ service }) => {
                     <p className="card-text"> {Description}</p>
 
                     <div className='payment-btn'>
-                        <button  onClick={() => navigateToPayment(Sub)}> <span>{Sub} for payment</span> </button>
+                        <button  onClick={() => navigateToPayment(id)}> <span>{Sub} for payment</span> </button>
                     </div>
                 </div>
             </div>

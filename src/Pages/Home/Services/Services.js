@@ -24,13 +24,16 @@ const Services = () => {
 
         <div>
             <span id='services'></span>
-            <div className='container '    >
+            <div>
+                <div className='container '   >
 
-                <h1 className='text-center m-0 text-primary py-3'>Services</h1>
-                <div className='row mb-0'>
-                    {
-                        services.map(service => <Service key={service.id} service={service}></Service>)
-                    }
+                    <h1 className='text-center m-0 text-primary py-3'>Services</h1>
+                    <div className='row mb-0'>
+
+                        {
+                            services.map(service => <Service key={service.id} service={service}></Service>)
+                        }
+                    </div>
                 </div>
             </div>
         </div>
