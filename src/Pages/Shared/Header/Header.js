@@ -1,6 +1,6 @@
 import React from 'react';
 import { signOut } from 'firebase/auth';
-import { Navbar, Container, Nav  } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../../images/logo.jpg'
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';

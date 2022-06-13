@@ -7,7 +7,7 @@ const Service = ({ service }) => {
     const { id, img, Sub, Cost, time, Description } = service;
 
     const navigate = useNavigate();
-    const navigateToPayment = Sub => {
+    const navigateToPayment = id => {
         navigate(`/home/${id}`)
        
     }
